@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!--
+ Autor: Gamaliel Silva Lopez
+ Fecha de creacion: 16 de mayo de 2022
+ Fecha de modificacion: 30 de mayo de 2022
+ Descripcion: Se crea una pagina web index que sera la pagina principal del proyecto.
+-->
+<html>
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="../webjars/fontawesome/4.7.0/css/font-awesome.min.css">
+        <!-- Jquery -->
+        <link rel="stylesheet" href="../webjars/jquery/3.6.0/dist/jquery.min.js">
+        <!-- CSS Main -->
+        <link rel="stylesheet" href="../resources/css/LogoEstilo.css">
+        <!-- JS Main -->
+        <link rel="stylesheet" href="../resources/javascrip/Inicio.js">
+
+        <!-- CSS MATERIALIZE -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- JS MATERIALIZE -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <title>Farmacia</title>
+
+
+    </head>
+    <body>
+
+        <!-- Navegation Menu -->
+        <nav class="black" role="navigation">
+            <div class="nav-wrapper container nav">
+                <!-- Logo -->
+                <a id="logo-container" href="#" class="brand-logo">
+                    <i class="material-icons">local_hospital</i>
+                    Farmacia
+                </a>
+
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <!-- Anclas -->
+                <ul class="right hide-on-med-and-down">
+                     <ul id="dropdown1" class="dropdown-content">
+                        <li><a href="../UsuarioServletController?action=crearForm">Crear</a></li>
+                        <li><a href="../UsuarioServletController?action=listar">Listar</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!">three</a></li>
+                    </ul>
+                    <ul id="dropdown2" class="dropdown-content">
+                        <li><a href="../ProductoServletController?action=crearForm">Crear</a></li>
+                        <li><a href="../ProductoServletController?action=listar">Listar</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!">three</a></li>
+                    </ul>
+                    <li><a href="index.html">Inicio</a></li>
+                  
+                    <!-- Sub menu -->
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Usuarios<i class="material-icons right">arrow_drop_down</i></a><</li>
+                     <!-- Sub menu -->
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Productos<i class="material-icons right">arrow_drop_down</i></a><</li>  
+                    
+                    <li><a href="../ProductoServletController?action=Login" class="btn white black-text waves-effect waves-blue-grey lighten-1">Iniciar sesion</a></li>
+                </ul>
+                <!-- Anclas -->
+                <ul id="nav-mobile" class="sidenav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Prodcutos</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#" class="btn black white-text waves-effect waves-blue-grey lighten-1">Iniciar sesion</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- Slider -->
+        <section class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="https://www.murias-taldea.com/wp-content/uploads/2021/08/5eb318285f726e13f7644684.png"> <!-- random image -->
+                    <div class="caption center-align">
+                        <h3  >Creative Studio</h3>
+                        <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis suscipit odio, explicabo sapiente totam nesciunt.</h5>
+                        <a href="#" class="btn-large waves-effect waves-light red  lighten-1">Leer mas</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://www.healthplanspain.com/images/farmacia_spain.jpg"> <!-- random image -->
+                    <div class="caption left-align">
+                        <h3>Left Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        <a href="#" class="btn-large waves-effect waves-light purple  lighten-1">Leer mas</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://images8.alphacoders.com/695/thumb-1920-695603.jpg"> <!-- random image -->
+                    <div class="caption right-align">
+                        <h3>Right Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        <a href="#" class="btn-large waves-effect waves-light pink  lighten-1">Leer mas</a>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+
+        <main>
+
+            <div class="container">
+                <div class="section">
+
+                    <!--   Icon Section   -->
+                    <div class="row">
+                        <div class="col s12 m4">
+                            <div class="icon-block">
+                                <h2 class="center black-text"><i class="material-icons">flash_on</i></h2>
+                                <h5 class="center">Acerca de la pagina</h5>
+
+                                <p class="light">Hicimos la mayor parte del trabajo pensado para que usted puede tener la mejor experiencia en cuanto a la compra de productos farmaceuticos. </p>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4">
+                            <div class="icon-block">
+                                <h2 class="center black-text"><i class="material-icons">group</i></h2>
+                                <h5 class="center">Experiencia de usuario enfocada.</h5>
+
+                                <p class="light">Esta pagina esta diseñada para todo tipo de personas que quieran adquierir algun producto farmaceutido desde la comodidad de su hogar</p>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4">
+                            <div class="icon-block">
+                                <h2 class="center black-text"><i class="material-icons">settings</i></h2>
+                                <h5 class="center">Fácil de trabajar con</h5>
+
+                                <p class="light">Hemos proporcionado documentación detallada, así como ejemplos de códigos específicos para ayudar a los nuevos usuarios a comenzar. También estamos siempre abiertos a recibir comentarios y podemos responder cualquier pregunta que un usuario pueda tener sobre Materialise.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <br><br>
+            </div>
+
+            <!-- Blog -->
+            <section class="container">
+                <h2 class="center">Producto</h2>
+
+                <div class="row">
+
+                    <div class="col s12 m12 l6">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="https://www.claro.com.co/portal/recursos/co//cpp/promociones/imagenes/1586964939918-6-02-Cuidado%20personal.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Cuidado personal
+                                    <i class="material-icons right">more_vert</i></span>
+                                <div class="card-action">
+                                    <a href="#" class="btn-large light-blue accent-2">Ver mas</a>
+                                </div>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">General Graphic Design<i class="material-icons right">close</i></span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum at tenetur mollitia voluptate? Tempore, itaque.</p>
+                                <img src="https://www.claro.com.co/portal/recursos/co//cpp/promociones/imagenes/1586964939918-6-02-Cuidado%20personal.jpg" class="responsive-img">
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="col s12 m12 l6">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="https://www.heraldobinario.com.mx/u/fotografias/m/2021/11/4/f960x540-16766_90841_0.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Medicamentos
+                                    <i class="material-icons right">more_vert</i></span>
+                                <div class="card-action">
+                                    <a href="#" class="btn-large light-blue accent-2">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">General Graphic Design<i class="material-icons right">close</i></span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum at tenetur mollitia voluptate? Tempore, itaque.</p>
+                                <img src="https://www.heraldobinario.com.mx/u/fotografias/m/2021/11/4/f960x540-16766_90841_0.jpg" class="responsive-img">
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="col s12 m12 l6">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="https://images8.alphacoders.com/599/thumb-1920-599429.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Belleza
+                                    <i class="material-icons right">more_vert</i></span>
+                                <div class="card-action">
+                                    <a href="#" class="btn-large light-blue accent-2">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">General Graphic Design<i class="material-icons right">close</i></span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum at tenetur mollitia voluptate? Tempore, itaque.</p>
+                                <img src="https://images8.alphacoders.com/599/thumb-1920-599429.jpg" class="responsive-img">
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="col s12 m12 l6">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="https://sites.google.com/site/articulosparabebespuertoasis/_/rsrc/1535077693047/productos-de-aseo/34r3r.png?height=320&width=320">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Bebés
+                                    <i class="material-icons right">more_vert</i></span>
+                                <div class="card-action">
+                                    <a href="#" class="btn-large light-blue accent-2">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">General Graphic Design<i class="material-icons right">close</i></span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum at tenetur mollitia voluptate? Tempore, itaque.</p>
+                                <img src="https://sites.google.com/site/articulosparabebespuertoasis/_/rsrc/1535077693047/productos-de-aseo/34r3r.png?height=320&width=320" class="responsive-img">
+                            </div>
+                        </div>           
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+
+
+        <!--  Footer-->
+        <footer class="page-footer black">
+
+            <div class="social-container">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <div class="footer-copyright">
+                <div class="container center footer-text">
+                    &copf; Gamaliel Silva López
+                </div>
+            </div>
+        </footer>
+
+
+        <!--  Scripts-->
+        <script src="https://kit.fontawesome.com/35db202371.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../resources/javascrip/Inicio.js"></script>
+        <!--  Scripts en la parte de sobre nosotros-->
+        <!--<script src="../resources/javascrip/SobreNosotros.js"></script>-->
+ <script>
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    // var elems = document.querySelectorAll('.sidenav');
+    // var instances = M.Sidenav.init(elems);
+    M.AutoInit();
+  });
+    
+  </script>
+
+
+    </body>
+</html>
+

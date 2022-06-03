@@ -1,0 +1,68 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 22 may. 2022, 21:51:04
+    Author     : Asus
+*/
+
+.bodylogin{
+	 background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,115,1) 45%, rgba(28,167,195,1) 89%); 
+width: 100vw;
+height: 100vh;
+}
+
+.loginDiv{
+	top: 20vh;
+	position: relative;
+	background-color: white;
+	width: 100%;
+	border-radius: 40px;
+	height: auto;
+}
+
+.loginContainer{
+padding: 30px;
+}
+
+.LoginTitle h5{
+font-weight: bold;
+}
+
+.custosninput{
+	height: 50px;
+	width: 100%;
+	margin-top: 30px;
+	background-color: #eee;
+	border-radius: 100px;
+	padding: 14px!important;
+
+}
+
+.custosninput:hover i{
+	color: purple !important;
+	transition: all 2s ease 0s;
+
+}
+
+.custosninput input{
+	position: relative;
+	padding-left: 30px;
+	border-style: none;
+	background-color: transparent;
+	outline: none;
+
+}
+
+.custosninput i{
+	position: absolute;
+	color: darkgray;
+	z-index: 999;
+transition: all 2s ease 0s;
+}
+
+.BTNLOGIN{
+	border-radius: 100px;
+}
